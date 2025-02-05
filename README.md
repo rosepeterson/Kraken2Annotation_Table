@@ -1,4 +1,7 @@
 # Runs Trimmomatic -> Kraken2 and Produces Annontation Tables and Bed files for IGV
+##### Step 0 Organize paired fastq files in directories based on sample
+<pre><code> ./Step0_organize.sh </pre></code>
+
 ### Step 1 run trimmomatic
 #### Run bash file to create Step1 Swarm file.
 <pre><code> ./Prepare_Step1.sh </pre></code>
