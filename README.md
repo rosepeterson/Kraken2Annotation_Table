@@ -46,12 +46,21 @@ ls -lrth */*fastq </pre></code>
 #### After Step3 remove empty fastq files 
 <pre><code> find * -size 0 -print -delete  </pre></code>
 <pre><code> ls -lrth */*fastq  </pre></code>
-### Step 4 asseembled extraxted reads with Star
+### Step 4 assemble extracted reads with Star
 <pre><code> ./Prepare_Step4.sh </pre></code>
 #### Submit Step4 swarm file
 <pre><code> swarm -f Step4_run_star_2.swarm -t 4 -g 50 --time=10:00:00 </pre></code>
 #### Check if Step4 Swarm Jobs are running 
 <pre><code> squeue -u username </pre></code>
-#### After Step4 finishing running check the error and log files and check the fastq files with extracted reads are not empty
+#### After Step4 finishing running check the error and log files and check the sam files extracted reads are not empty
 <pre><code> cat swarm_number.e 
-ls -lrth */*fastq </pre></code>
+ls -lrth */*sam </pre></code>
+### Step 5 sort Sam files and convert to bam files
+<pre><code> ./Prepare_Step5.sh </pre></code>
+#### Submit Step4 swarm file
+<pre><code> swarm -f Step5_sort_sam.swarm -t 4 -g 50 --time=10:00:00 </pre></code>
+#### Check if Step5 Swarm Jobs are running 
+<pre><code> squeue -u username </pre></code>
+#### After Step5 finishing running check the error and log files and check the bam files are not empty
+<pre><code> cat swarm_number.e 
+ls -lrth */*bam </pre></code>
