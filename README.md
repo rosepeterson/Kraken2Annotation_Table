@@ -17,4 +17,4 @@ ls -lrth */*fastq.gz </pre></code>
 ### Step 2 run Kraken2 on filtered fastq files
 <pre><code> ./Prepare_Step2.sh </pre></code>
 #### Submit Step2 swarm file
-<pre><code> swarm -f Step2_run_Kraken2.swarm -t 4 -g 20 --time=10:00:00 </pre></code>
+<pre><code> swarm -f Step2_run_Kraken2.swarm -t 4 -g 100 --time=10:00:00 </pre></code>
