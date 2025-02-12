@@ -1,0 +1,19 @@
+##gff-version 3
+#!gff-spec-version 1.21
+#!processor NCBI annotwriter
+#!genome-build ViralProj15439
+#!genome-build-accession NCBI_Assembly:GCF_000861125.1
+##sequence-region NC_000858.1 1 9028
+##species https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=194440
+NC_000858.1	RefSeq	region	1	9028	.	+	.	ID=NC_000858.1:1..9028;Dbxref=taxon:194440;country=Central African Republic;gbkey=Src;genome=genomic;isolate=Tan90;mol_type=genomic DNA;note=isolated from a Tantalus monkey
+NC_000858.1	RefSeq	long_terminal_repeat	1	755	.	+	.	ID=id-NC_000858.1:1..755;gbkey=repeat_region;rpt_type=long_terminal_repeat
+NC_000858.1	RefSeq	gene	802	2088	.	+	.	ID=gene-STLV1gp1;Dbxref=GeneID:1497207;Name=STLV1gp1;gbkey=Gene;gene_biotype=protein_coding;locus_tag=STLV1gp1
+NC_000858.1	RefSeq	CDS	802	2088	.	+	0	ID=cds-NP_049558.1;Parent=gene-STLV1gp1;Dbxref=GenBank:NP_049558.1,GeneID:1497207;Name=NP_049558.1;gbkey=CDS;locus_tag=STLV1gp1;product=gag polyprotein;protein_id=NP_049558.1
+NC_000858.1	RefSeq	gene	2253	2753	.	+	.	ID=gene-STLV1gp2;Dbxref=GeneID:1497206;Name=STLV1gp2;gbkey=Gene;gene_biotype=protein_coding;locus_tag=STLV1gp2
+NC_000858.1	RefSeq	CDS	2253	2753	.	+	0	ID=cds-NP_049559.1;Parent=gene-STLV1gp2;Dbxref=GenBank:NP_049559.1,GeneID:1497206;Name=NP_049559.1;gbkey=CDS;locus_tag=STLV1gp2;product=protease;protein_id=NP_049559.1
+NC_000858.1	RefSeq	gene	2990	6643	.	+	.	ID=gene-STLV1gp3;Dbxref=GeneID:1497205;Name=STLV1gp3;gbkey=Gene;gene_biotype=protein_coding;locus_tag=STLV1gp3
+NC_000858.1	RefSeq	CDS	2990	6643	.	+	0	ID=cds-NP_049560.1;Parent=gene-STLV1gp3;Dbxref=GenBank:NP_049560.1,GeneID:1497205;Name=NP_049560.1;gbkey=CDS;locus_tag=STLV1gp3;product=reverse transcriptase/envelope protein;protein_id=NP_049560.1
+NC_000858.1	RefSeq	gene	7618	8355	.	+	.	ID=gene-STLV1gp4;Dbxref=GeneID:1497204;Name=STLV1gp4;gbkey=Gene;gene_biotype=protein_coding;locus_tag=STLV1gp4
+NC_000858.1	RefSeq	CDS	7618	8355	.	+	0	ID=cds-NP_049561.1;Parent=gene-STLV1gp4;Dbxref=GenBank:NP_049561.1,GeneID:1497204;Name=NP_049561.1;gbkey=CDS;locus_tag=STLV1gp4;product=tax protein;protein_id=NP_049561.1
+NC_000858.1	RefSeq	long_terminal_repeat	8274	9028	.	+	.	ID=id-NC_000858.1:8274..9028;gbkey=repeat_region;rpt_type=long_terminal_repeat
+###
