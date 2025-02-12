@@ -3,6 +3,5 @@
 for f in S*/*{HH42,PTVL1}Aligned.out.sam; do
     in="${f%.sam}.bam"
     out="${f%.sam}.sorted.bam"
-
-    echo "module load samtools && samtools view -bS $f > $in && samtools sort -o $out $in && samtools index $out" >> sort_sam_2.swarm
+    echo "module load samtools && samtools view -bS $f > $in && samtools sort -o $out $in && samtools index $out" >> Step5_sort_sam.swarm
 done
