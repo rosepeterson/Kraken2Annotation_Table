@@ -25,6 +25,7 @@ ls -lrth */*fastq.gz </pre></code>
 ls -lrth */*txt </pre></code>
 ### Step 3 extract relevant reads from Kraken2 results 
 <pre><code> ./Prepare_Step3.sh </pre></code>
+<pre><code> git clone (https://github.com/jenniferlu717/KrakenTools.git) </code></pre>
 #### Submit Step3 swarm file
 <pre><code> swarm -f Step3_extract_reads_kraken2.swarm -t 50 --time=10:00:00 </pre></code>
 #### Check if Step3 Swarm Jobs are running 
