@@ -1,0 +1,19 @@
+### STAR   --runMode genomeGenerate      --runThreadN 16   --genomeDir EBV   --genomeFastaFiles EBV/NC_007605.1_EBV.fna      --sjdbGTFfile EBV/NC_007605.1_EBV.gff3   --sjdbOverhang 99
+### GstrandBit 32
+versionGenome	2.7.4a
+genomeType	Full
+genomeFastaFiles	EBV/NC_007605.1_EBV.fna 
+genomeSAindexNbases	14
+genomeChrBinNbits	18
+genomeSAsparseD	1
+genomeTransformType	None
+genomeTransformVCF	-
+sjdbOverhang	99
+sjdbFileChrStartEnd	- 
+sjdbGTFfile	EBV/NC_007605.1_EBV.gff3
+sjdbGTFchrPrefix	-
+sjdbGTFfeatureExon	exon
+sjdbGTFtagExonParentTranscript	transcript_id
+sjdbGTFtagExonParentGene	gene_id
+sjdbInsertSave	Basic
+genomeFileSizes	262144 1417543
