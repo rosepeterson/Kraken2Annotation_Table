@@ -9,4 +9,4 @@ outu=${f%R1_001.fastq.gz}"R1_unpaired.fastq.gz"
 outu2=${f%R1_001.fastq.gz}"R2_unpaired.fastq.gz"
 echo "module load trimmomatic/0.39 && java -jar \$TRIMMOJAR PE -phred33 $f $in2 $out $outu $out2 $outu2 ILLUMINACLIP:/usr/local/apps/trimmomatic/0.39/adapters/TruSeq3-PE.fa:2:30:10 LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:36" >> Step1_filter_trimm.swarm
 done
-git clone 
+git clone https://github.com/rosepeterson/Kraken2Annotation_Table.git
