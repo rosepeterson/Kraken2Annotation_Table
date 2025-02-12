@@ -32,4 +32,7 @@ ls -lrth */*txt </pre></code>
 <pre><code> squeue -u username </pre></code>
 #### After Step3 finishing running check the error and log files and check the fastq files with extracted reads are not empty
 <pre><code> cat swarm_number.e 
-ls -lrth */*fastq.gz </pre></code>
+ls -lrth */*fastq </pre></code>
+#### After Step3 remove empty fastq files 
+<pre><code> find * -size 0 -print -delete  </pre>/code>
+<pre><code> ls -lrth */*fastq  </pre>/code>
