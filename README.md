@@ -34,5 +34,5 @@ ls -lrth */*txt </pre></code>
 <pre><code> cat swarm_number.e 
 ls -lrth */*fastq </pre></code>
 #### After Step3 remove empty fastq files 
-<pre><code> find * -size 0 -print -delete  </pre>/code>
-<pre><code> ls -lrth */*fastq  </pre>/code>
+<pre><code> find * -size 0 -print -delete  </pre></code>
+<pre><code> ls -lrth */*fastq  </pre></code>
