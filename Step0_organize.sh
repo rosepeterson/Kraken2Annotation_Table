@@ -6,3 +6,7 @@ do
     mkdir -p "$dir"
     mv $in "$dir"
 done
+git clone https://github.com/rosepeterson/Kraken2Annotation_Table.git
+unzip Kraken2Annotation_Table/ref_star_genome/*/SAindex.gz.zip
+gunzip Kraken2Annotation_Table/ref_star_genome/*/SAindex.gz
+mv Kraken2Annotation_Table/*sh ./ 
