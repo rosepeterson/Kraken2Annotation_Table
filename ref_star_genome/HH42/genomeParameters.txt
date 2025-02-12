@@ -1,0 +1,19 @@
+### STAR   --runMode genomeGenerate      --runThreadN 16   --genomeDir HH42   --genomeFastaFiles HH42/GCF_000872045.1_ViralProj20959_genomic_HH42.fna      --sjdbGTFfile HH42/GCF_000872045.1_ViralProj20959_genomic_HH42.gff   --sjdbOverhang 99
+### GstrandBit 32
+versionGenome	2.7.4a
+genomeType	Full
+genomeFastaFiles	HH42/GCF_000872045.1_ViralProj20959_genomic_HH42.fna 
+genomeSAindexNbases	14
+genomeChrBinNbits	18
+genomeSAsparseD	1
+genomeTransformType	None
+genomeTransformVCF	-
+sjdbOverhang	99
+sjdbFileChrStartEnd	- 
+sjdbGTFfile	HH42/GCF_000872045.1_ViralProj20959_genomic_HH42.gff
+sjdbGTFchrPrefix	-
+sjdbGTFfeatureExon	exon
+sjdbGTFtagExonParentTranscript	transcript_id
+sjdbGTFtagExonParentGene	gene_id
+sjdbInsertSave	Basic
+genomeFileSizes	262144 1425306

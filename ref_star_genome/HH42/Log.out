@@ -1,0 +1,94 @@
+STAR version=2.7.11b
+STAR compilation time,server,dir=2024-03-14T10:52:43-04:00 cn1168:/usr/local/apps/STAR/DOWNLOADS/STAR-2.7.11b/source
+STAR git: 
+##### Command Line:
+STAR --runThreadN 16 --runMode genomeGenerate --genomeDir HH42 --genomeFastaFiles HH42/GCF_000872045.1_ViralProj20959_genomic_HH42.fna --sjdbGTFfile HH42/GCF_000872045.1_ViralProj20959_genomic_HH42.gff --sjdbOverhang 99
+##### Initial USER parameters from Command Line:
+###### All USER parameters from Command Line:
+runThreadN                    16     ~RE-DEFINED
+runMode                       genomeGenerate        ~RE-DEFINED
+genomeDir                     HH42     ~RE-DEFINED
+genomeFastaFiles              HH42/GCF_000872045.1_ViralProj20959_genomic_HH42.fna        ~RE-DEFINED
+sjdbGTFfile                   HH42/GCF_000872045.1_ViralProj20959_genomic_HH42.gff     ~RE-DEFINED
+sjdbOverhang                  99     ~RE-DEFINED
+##### Finished reading parameters from all sources
+
+##### Final user re-defined parameters-----------------:
+runMode                           genomeGenerate   
+runThreadN                        16
+genomeDir                         HH42
+genomeFastaFiles                  HH42/GCF_000872045.1_ViralProj20959_genomic_HH42.fna   
+sjdbGTFfile                       HH42/GCF_000872045.1_ViralProj20959_genomic_HH42.gff
+sjdbOverhang                      99
+
+-------------------------------
+##### Final effective command line:
+STAR   --runMode genomeGenerate      --runThreadN 16   --genomeDir HH42   --genomeFastaFiles HH42/GCF_000872045.1_ViralProj20959_genomic_HH42.fna      --sjdbGTFfile HH42/GCF_000872045.1_ViralProj20959_genomic_HH42.gff   --sjdbOverhang 99
+----------------------------------------
+
+Number of fastq files for each mate = 1
+ParametersSolo: --soloCellFilterType CellRanger2.2 filtering parameters:  3000 0.99 10
+Finished loading and checking parameters
+--genomeDir directory exists and will be overwritten: HH42/
+Feb 04 11:07:17 ... starting to generate Genome files
+HH42/GCF_000872045.1_ViralProj20959_genomic_HH42.fna : chr # 0  "NC_009334.1" chrStart: 0
+Chromosome sequence lengths: 
+NC_009334.1	172764
+Genome sequence total length = 172764
+Genome size with padding = 262144
+Feb 04 11:07:17 ..... processing annotations GTF
+WARNING: while processing pGe.sjdbGTFfile=HH42/GCF_000872045.1_ViralProj20959_genomic_HH42.gff: no transcript_id for line:
+NC_009334.1	RefSeq	exon	6634	6800	.	+	.	ID=exon-HHV4tp2_gs01-1;Parent=rna-HHV4tp2_gs01;Dbxref=GeneID:5176223;gbkey=misc_RNA;locus_tag=HHV4tp2_gs01;product=EBER-1
+WARNING: while processing pGe.sjdbGTFfile=HH42/GCF_000872045.1_ViralProj20959_genomic_HH42.gff: no gene_id for line:
+NC_009334.1	RefSeq	exon	6634	6800	.	+	.	ID=exon-HHV4tp2_gs01-1;Parent=rna-HHV4tp2_gs01;Dbxref=GeneID:5176223;gbkey=misc_RNA;locus_tag=HHV4tp2_gs01;product=EBER-1
+WARNING: while processing pGe.sjdbGTFfile=HH42/GCF_000872045.1_ViralProj20959_genomic_HH42.gff: no transcript_id for line:
+NC_009334.1	RefSeq	exon	6961	7133	.	+	.	ID=exon-HHV4tp2_gs02-1;Parent=rna-HHV4tp2_gs02;Dbxref=GeneID:5176201;gbkey=misc_RNA;locus_tag=HHV4tp2_gs02;product=EBER-2
+WARNING: while processing pGe.sjdbGTFfile=HH42/GCF_000872045.1_ViralProj20959_genomic_HH42.gff: no gene_id for line:
+NC_009334.1	RefSeq	exon	6961	7133	.	+	.	ID=exon-HHV4tp2_gs02-1;Parent=rna-HHV4tp2_gs02;Dbxref=GeneID:5176201;gbkey=misc_RNA;locus_tag=HHV4tp2_gs02;product=EBER-2
+Processing pGe.sjdbGTFfile=HH42/GCF_000872045.1_ViralProj20959_genomic_HH42.gff, found:
+		2 transcripts
+		2 exons (non-collapsed)
+		0 collapsed junctions
+Total junctions: 0
+Feb 04 11:07:17 ..... finished GTF processing
+
+!!!!! WARNING: --genomeSAindexNbases 14 is too large for the genome size=172764, which may cause seg-fault at the mapping step. Re-run genome generation with recommended --genomeSAindexNbases 7
+Estimated genome size with padding and SJs: total=genome+SJ=199262144 = 262144 + 199000000
+GstrandBit=32
+Number of SA indices: 345528
+Feb 04 11:07:17 ... starting to sort Suffix Array. This may take a long time...
+Number of chunks: 16;   chunks size limit: 184280 bytes
+Feb 04 11:07:17 ... sorting Suffix Array chunks and saving them to disk...
+Writing 171752 bytes into HH42//SA_0 ; empty space on disk = 1827976446476288 bytes ... done
+Writing 171752 b176832 bytes into HH42//SA_6 ; empty space on disk = 18279764464762881827976446476288 bytes ...Writing 171752 b176832 bytes into HH42//SA_6 ; empty space on disk = 18279764464762881827976446476288 bytes ...Writing 175248 bytes into HH42//SA_7 ; empty space on disk = 1827976446476288 bytes ... done
+ done
+ done
+Writing 165480 bytes into HH42//SA_8 ; empty space on disk = 1827976446476288 bytes ... done
+Writing 180240 bytes into HH42//SA_13 ; empty space on disk = 1827976446476288 bytes ... done
+Writing 183696 bytes into HH42//SA_3 ; empty space on disk = 1827976446476288 bytes ... done
+Writing 180952 bytes into HH42//SA_12 ; empty space on disk = 1827976446476288 bytes ... done
+Writing 181104 bytes into HH42//SA_2 ; empty space on disk = 1827976446476288 bytes ...Writing 178992 bytes into HH42//SA_5 ; empty space on disk = 1827976446476288 bytes ... done
+ done
+Writing 176016 bytes into HH42//SA_9 ; empty space on disk = 1827976446476288 bytes ... done
+Writing 111104 bytes into HH42//SA_15 ; empty space on disk = 1827976446476288 bytes ... done
+Writing 183224 bytes into HH42//SA_4 ; empty space on disk = 1827976446476288 bytes ... done
+Writing 175160 bytes into HH42//SA_1 ; empty space on disk = 1827976446476288 bytes ... done
+Writing 161656 bytes into HH42//SA_10 ; empty space on disk = 1827976446476288 bytes ...Writing 180864 bytes into HH42//SA_11 ; empty space on disk = 1827976446476288 bytes ... done
+ done
+Feb 04 11:07:17 ... loading chunks from disk, packing SA...
+Feb 04 11:07:17 ... finished generating suffix array
+Feb 04 11:07:17 ... generating Suffix Array index
+Feb 04 11:07:21 ... completed Suffix Array index
+Feb 04 11:07:21   Finished preparing junctions
+Feb 04 11:07:21 ..... finished inserting junctions into genome
+Feb 04 11:07:21 ... writing Genome to disk ...
+Writing 262144 bytes into HH42//Genome ; empty space on disk = 1827976446476288 bytes ... done
+SA size in bytes: 1425306
+Feb 04 11:07:21 ... writing Suffix Array to disk ...
+Writing 1425306 bytes into HH42//SA ; empty space on disk = 1827976438087680 bytes ... done
+Feb 04 11:07:21 ... writing SAindex to disk
+Writing 8 bytes into HH42//SAindex ; empty space on disk = 1827976442281984 bytes ... done
+Writing 120 bytes into HH42//SAindex ; empty space on disk = 1827976442281984 bytes ... done
+Writing 1565873491 bytes into HH42//SAindex ; empty space on disk = 1827976442281984 bytes ... done
+Feb 04 11:07:21 ..... finished successfully
+DONE: Genome generation, EXITING
