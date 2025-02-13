@@ -1,8 +1,6 @@
 # Runs Trimmomatic -> Kraken2 and Produces Annontation Tables and Bed files for IGV
-##### Step 0 Organize paired fastq files in directories based on sample
-<pre><code> ./Step0_organize.sh </pre></code>
 
-### Step 1 run trimmomatic
+### Step 0 Organize Data
 #### Run bash file to create Step1 Swarm file.
 <pre><code> for f in *R1*fastq.gz; 
 do
@@ -15,6 +13,9 @@ git clone https://github.com/rosepeterson/Kraken2Annotation_Table.git
 unzip Kraken2Annotation_Table/ref_star_genome/*/SAindex.gz.zip
 gunzip Kraken2Annotation_Table/ref_star_genome/*/SAindex.gz
 mv Kraken2Annotation_Table/*sh ./  </pre></code>
+##### Step 1 Run Trimmomatic
+<pre><code> ./Prepare_Step1.sh </pre></code>
+
 #### Check the swarm file
 <pre><code> head Step1_filter_trimm.swarm </pre></code>
 #### Submit Step1 swarm file
