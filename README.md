@@ -58,10 +58,22 @@ ls -lrth */*fastq </pre></code>
 ls -lrth */*sam </pre></code>
 ### Step 5 sort Sam files and convert to bam files
 <pre><code> ./Prepare_Step5.sh </pre></code>
-#### Submit Step4 swarm file
+#### Submit Step5 swarm file
 <pre><code> swarm -f Step5_sort_sam.swarm -t 4 -g 50 --time=10:00:00 </pre></code>
 #### Check if Step5 Swarm Jobs are running 
 <pre><code> squeue -u username </pre></code>
 #### After Step5 finishing running check the error and log files and check the bam files are not empty
 <pre><code> cat swarm_number.e 
 ls -lrth */*bam </pre></code>
+### Step 6 sort convert bam to bed files
+<pre><code> ./Prepare_Step6.sh </pre></code>
+####  Check Step6 swarm file look good
+<pre><code> cat Step6_Bam2Bed.swarm </code></pre>
+#### Submit Step6 swarm file
+<pre><code> swarm -f Step6_Bam2Bed.swarm -t 4 -g 50 --time=10:00:00 </code></pre>
+
+#### Check if Step6 Swarm Jobs are running 
+<pre><code> squeue -u username </pre></code>
+#### After Step6 finishing running check the error and log files and check the bed files are not empty
+<pre><code> cat swarm_number.e 
+ls -lrth */*bed </pre></code>
